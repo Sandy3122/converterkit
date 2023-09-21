@@ -1,12 +1,23 @@
 {
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
   "routes": [
     {
       "src": "/convert",
-      "dest": "/public/index.js"
+      "dest": "/index.js"
     },
     {
       "src": "/download/(.*)",
-      "dest": "/public/index.js"
+      "dest": "/index.js"
+    },
+    {
+      "src": "/public/(.*)",
+      "dest": "/public/$1"
     },
     {
       "src": "/(.*)",
