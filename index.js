@@ -6,7 +6,6 @@ const PDFDocument = require('pdfkit');
 const path = require('path');
 
 const app = express();
-const port = 3000;
 
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
@@ -126,6 +125,8 @@ app.get('/download/:filename', (req, res) => {
     const fileStream = fs.createReadStream(filePath);
     fileStream.pipe(res);
 });
+
+port = process.env.PORT || 8000
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
