@@ -12,12 +12,8 @@
   ],
   "routes": [
     {
-      "src": "/convert",
-      "dest": "/index.js"
-    },
-    {
-      "src": "/download/(.*)",
-      "dest": "/index.js"
+      "src": "/(.*)",
+      "dest": "index.js"
     }
   ]
 }
