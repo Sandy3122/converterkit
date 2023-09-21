@@ -4,6 +4,9 @@ const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
 const PDFDocument = require('pdfkit');
 const path = require('path');
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 const app = express();
 
