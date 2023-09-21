@@ -29,7 +29,7 @@ convertButton.addEventListener('click', (event) => {
         orientationSelect.selectedIndex = 0;    // Reset the <select>
         imageInput.value = '';                  // Clear the <input>
 
-        fetch('/public/imgToPdf/convert', {
+        fetch('/convert', {
             method: 'POST',
             body: formData
         })
