@@ -1,0 +1,111 @@
+
+body{
+    font-style: italic;
+    background-image: linear-gradient(rgb(65, 62, 64), rgb(20, 20, 18, 0.4));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.heading{
+    font-family:'Lobster', cursive ;
+    font-weight: bold;
+    font-size: 50px;
+    color: aliceblue;   
+}
+
+.bg-dark {
+    background: #000000 !important;
+}
+
+.btn{
+    background-color: rgb(51, 51, 51);
+    width: 100%;
+    color: #fff;
+    border-radius: 35px;
+    border: none;
+    border: 0 !important;
+    box-shadow: none !important;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+}
+
+input[type=file]::file-selector-button{
+    margin: -4px 30px -4px 10px;
+    border: none;
+    background: #676666;
+    padding: 8px 16px;
+    border-radius: 22px;
+    font-weight: bold;
+    /*color: #fff;
+    */cursor: pointer;
+    transition: background .2s ease-in-out;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+}
+
+/* input {
+    padding: 10px 0 10px 0 !important;
+} */
+
+option{
+    font-style: italic;
+    background-color: #676666 !important;
+    color: #000000 !important;
+}
+
+input, select{
+    border-radius: 35px !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    background-color: #d0caca !important;
+    -webkit-border-radius: 35px !important;
+    -moz-border-radius: 35px !important;
+    -ms-border-radius: 35px !important;
+    -o-border-radius: 35px !important;
+}
+
+
+
+input:hover, 
+select:hover, 
+.btn:hover{
+    background-color: #000 !important;
+    color: #fff;
+}
+
+input[type=file]::file-selector-button:hover{
+    background-color: #000 !important;
+    color: #000000 !important;
+}
+
+
+/* .container {
+    max-width: 50%;
+    margin-top: 50px;
+} */
+
+/* .h1 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+#imageInput {
+    padding: 10px;
+    background-color: #fff;
+} */
+/* 
+#convertButton {
+    margin-top: 10px;
+} */
+
+/* #result {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+} */
