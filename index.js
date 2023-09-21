@@ -31,6 +31,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/convert', upload.array('images'), (req, res) => {
+    console.log("Inside The Convert Function")
     const imagePaths = req.files.map(file => file.path);
     const selectedOrientation = req.body.orientation; // Get the selected orientation from the request
 
